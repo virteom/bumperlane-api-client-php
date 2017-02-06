@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "Virteom.ApiClient.Php", "Virteom.ApiClient.Php\Virteom.ApiClient.Php.phpproj", "{AFE94DD6-6AE2-4D7A-BCD3-813DC167A923}"
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "Virteom.ApiClient.Php", "Virteom.ApiClient.Php.phpproj", "{AFE94DD6-6AE2-4D7A-BCD3-813DC167A923}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

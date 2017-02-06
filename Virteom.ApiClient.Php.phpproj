@@ -19,18 +19,25 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Api.php" />
-    <Compile Include="ApiClient.php" />
+    <Compile Include="ApiClient\Api.php" />
+    <Compile Include="ApiClient\ApiClient.php" />
+    <Compile Include="ApiClient\Core\ApiRequest.php" />
+    <Compile Include="ApiClient\Core\BasicEnum.php" />
+    <Compile Include="ApiClient\includes.php" />
     <Compile Include="Core\ApiRequest.php" />
-    <Compile Include="includes.php" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ApiClient\" />
+    <Folder Include="ApiClient\Core\" />
     <Folder Include="Core\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\BasicEnum.php" />
+    <Content Include=".gitignore" />
     <Content Include="composer.json" />
+    <Content Include="LICENSE" />
+    <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\DEVSENSE\PHP Tools\VS$(VisualStudioVersion)\Devsense.PHP.MsWebApplication.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
