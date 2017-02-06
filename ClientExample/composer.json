@@ -1,0 +1,6 @@
+{
+  "require": {
+    "bumperlane/api-client-php": "dev-master"
+  },
+  "minimum-stability": "dev"
+}
