@@ -24,16 +24,13 @@
     <Compile Include="ApiClient\Core\ApiRequest.php" />
     <Compile Include="ApiClient\Core\BasicEnum.php" />
     <Compile Include="ApiClient\includes.php" />
-    <Compile Include="Core\ApiRequest.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ApiClient\" />
     <Folder Include="ApiClient\Core\" />
-    <Folder Include="Core\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\BasicEnum.php" />
     <Content Include=".gitignore" />
     <Content Include="composer.json" />
     <Content Include="LICENSE" />
