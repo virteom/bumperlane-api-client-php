@@ -23,22 +23,13 @@
     <Compile Include="ApiClient.php" />
     <Compile Include="Core\ApiRequest.php" />
     <Compile Include="includes.php" />
-    <Compile Include="index.php" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="cloud-bin\" />
     <Folder Include="Core\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\BasicEnum.php" />
-    <Content Include="cloud-bin\ca-bundle.crt" />
-    <Content Include="cloud-bin\ca.pem" />
-    <Content Include="cloud-bin\cacert.pem" />
-    <Content Include="cloud-bin\client-cert.pem" />
-    <Content Include="cloud-bin\client-key.pem" />
-    <Content Include="cloud-bin\client_key-nopass.pem" />
-    <Content Include="cloud-bin\php_xsl.dll" />
     <Content Include="composer.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\DEVSENSE\PHP Tools\VS$(VisualStudioVersion)\Devsense.PHP.MsWebApplication.targets" />
