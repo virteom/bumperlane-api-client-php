@@ -1,5 +1,5 @@
 {
-  "name": "bumperlane-api-client-php",
+  "name": "bumperlane/api-client-php",
   "version": "0.1.0",
   "description": "Virteom API Client Library",
   "license": "MIT",
