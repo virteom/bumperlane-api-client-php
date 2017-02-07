@@ -21,6 +21,9 @@
   <ItemGroup>
     <Compile Include="ApiClient\Api.php" />
     <Compile Include="ApiClient\ApiClient.php" />
+    <Compile Include="ApiClient\Clients\CoreV2.php" />
+    <Compile Include="ApiClient\Clients\TouchConvertV2.php" />
+    <Compile Include="ApiClient\Clients\TouchConvertV1.php" />
     <Compile Include="ApiClient\Core\ApiRequest.php" />
     <Compile Include="ApiClient\Core\BasicEnum.php" />
     <Compile Include="ApiClient\includes.php" />
@@ -28,10 +31,12 @@
   <ItemGroup>
     <Folder Include="ApiClient\" />
     <Folder Include="ApiClient\Core\" />
+    <Folder Include="ApiClient\Clients\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="ApiClient\IApiClient.php" />
     <Content Include="composer.json" />
     <Content Include="LICENSE" />
     <Content Include="README.md" />

@@ -19,7 +19,12 @@ class ApiRequest extends \ODataQuery\ODataResourcePath {
     }
 
     private function getAccessTokenIfNeeded(){
-        if($this->accessToken == null){
+        if(!$this->apiClient->UseCredentials || ($this->apiClient->ClientId == null && $this->apiClient->ClientSecret == null)){
+            $this->accessToken = null;
+            return;
+        }
+
+        if($this->accessToken === null){
             try {
                 $client = new \GuzzleHttp\Client();
                 $response = $client->request('POST', rtrim(IDENTIY_SITE_URL,"/") . '/core/connect/token', [
@@ -48,16 +53,22 @@ class ApiRequest extends \ODataQuery\ODataResourcePath {
     }
 
     protected function getClient(){
-            $this->getAccessTokenIfNeeded();
-            $client = new \GuzzleHttp\Client([
-            'timeout'  => 30.0,
-            'proxy' => $this->getProxyOverrideIfNeeded(),
-            'headers' => [
-                'Authorization' => 'Bearer ' . $this->accessToken,
+            $headers = [
                 'Accept'        => 'application/json',
                 'Content-Type'  => 'application/json'
-            ]
-        ]);
+            ];
+
+            $this->getAccessTokenIfNeeded();
+            if($this->accessToken === null){
+                $headers['Authorization'] = 'Bearer ' . $this->accessToken;
+            }
+
+            $client = new \GuzzleHttp\Client([
+                'timeout'  => 60.0,
+                'proxy' => $this->getProxyOverrideIfNeeded(),
+                'headers' => $headers
+            ]);
+
         return $client;
     }
 

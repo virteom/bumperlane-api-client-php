@@ -1,9 +1,9 @@
 <?php
 
-include_once('vendor\autoload.php');
+include_once('../ApiClient/includes.php');
 include_once('config.php');
 
-$api = new \Virteom\ApiClient\Php\ApiClient(\Virteom\ApiClient\Php\Api::TouchConvertV1);
+$api = \Virteom\ApiClient\Php\ApiClient::Create(\Virteom\ApiClient\Php\Api::TouchConvertV1);
 $request = $api->BuildRequest("ContactsPersonDetail");
 
 $request->setOrderByDesc('LastName');
