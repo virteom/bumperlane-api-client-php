@@ -1,5 +1,12 @@
 <?php
-
+//////////////////////////////////////////////////////////////////////////
+////// To include the library using composer, replace the line:    ///////
+//////    include_once('../ApiClient/includes.php');               ///////
+//////                                                             ///////
+////// With the following line instead:                            ///////
+//////    include_once('vendor/autoload.php');                     ///////
+//////                                                             ///////
+//////////////////////////////////////////////////////////////////////////
 include_once('../ApiClient/includes.php');
 include_once('config.php');
 
