@@ -251,6 +251,6 @@ paket-files/
 .idea/
 *.sln.iml
 
-
+**/cache
 **/vendor
 **/composer.lock

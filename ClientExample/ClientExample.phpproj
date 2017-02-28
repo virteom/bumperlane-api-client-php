@@ -14,7 +14,7 @@
     <Runtime>PHP</Runtime>
     <RuntimeVersion>5.6</RuntimeVersion>
     <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
-    <EnvName>PHPDev</EnvName>
+    <EnvName>IISExpress</EnvName>
     <PHPDevHostName>localhost</PHPDevHostName>
     <PHPDevAutoPort>true</PHPDevAutoPort>
   </PropertyGroup>

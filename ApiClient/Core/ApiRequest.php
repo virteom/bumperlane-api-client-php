@@ -88,10 +88,10 @@ class ApiRequest extends \ODataQuery\ODataResourcePath {
         return parent::setOrderBy($property . ' ' . ApiRequest::ORDER_ASC);
     }
 
-    public function Post($body){
+    public function Post($body, $type = "application/json;odata.metadata=minimal"){
         $client = $this->getClient();
         $response = $client->request('POST', (string)$this, [
-            'json' => $body,
+            'body' => $body,
             'verify' => $this->certificateAuthoritiesPath()
         ]);
         return $response;
