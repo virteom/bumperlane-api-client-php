@@ -27,20 +27,19 @@
   <ItemGroup>
     <Compile Include="includes\config.php" />
     <Compile Include="includes\on-each-page.php" />
-    <Compile Include="utilities\config.php" />
+    <Compile Include="send-email.php" />
     <Compile Include="get-contacts.php" />
-    <Compile Include="utilities\includes.php" />
     <Compile Include="index.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="includes\" />
     <Folder Include="page-templates\" />
     <Folder Include="Properties\" />
-    <Folder Include="utilities\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="composer.json" />
     <Content Include="page-templates\get-contacts.html" />
+    <Content Include="page-templates\send-email.html" />
     <Content Include="page-templates\_layout.html" />
     <Content Include="page-templates\index.html" />
   </ItemGroup>

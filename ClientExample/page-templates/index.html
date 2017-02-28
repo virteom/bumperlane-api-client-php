@@ -4,16 +4,16 @@
 <ul class="list-group">
     <li class="list-group-item">
         <h3>Fetching Contacts</h3>
-        <button class="btn btn-default" type="button" onclick="location.href = 'get-contacts.php'">Get Contacts</button>
+        <button class="btn btn-default load-button" type="button" onclick="location.href = 'get-contacts.php'">Get Contacts</button>
     </li>
     <li class="list-group-item">
         <h3>Sending Email</h3>
         <form id="email-form" action="send-email.php">
             <div class="input-group">
-                <span class="input-group-addon" id="to-label">Send To Address</span>
+                <span class="input-group-addon" id="to-label">To:</span>
                 <input type="text" class="form-control" id="to" name="to" aria-describedby="to-label">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">Send</button>
+                    <button class="btn btn-default load-button" type="submit">Send Email</button>
                 </span>
             </div>
         </form>

@@ -15,4 +15,4 @@ $request->setFilter($filter);
 
 $result = $request->Get();
 
-echo $twig->render('get-contacts.html', array("data" => $result));
+echo $twig->render('get-contacts.html', array("data" => json_encode(json_decode($result), JSON_PRETTY_PRINT)));
