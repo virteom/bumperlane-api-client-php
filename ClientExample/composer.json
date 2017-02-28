@@ -1,7 +1,7 @@
 {
   "require": {
     "bumperlane/api-client-php": "dev-master",
-    "twig/twig": "^2.0"
+    "twig/twig": "^1.32"
   },
   "minimum-stability": "dev"
 }
