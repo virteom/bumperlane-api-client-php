@@ -11,6 +11,12 @@
     <RootNamespace>
     </RootNamespace>
     <ProjectTypeGuids>{73520F3B-57D4-4D7D-8280-D81F0A3C992B};{349C5851-65DF-11DA-9384-00065B846F21};{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.6</RuntimeVersion>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -19,14 +25,24 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="config.php" />
+    <Compile Include="includes\config.php" />
+    <Compile Include="includes\on-each-page.php" />
+    <Compile Include="utilities\config.php" />
+    <Compile Include="get-contacts.php" />
+    <Compile Include="utilities\includes.php" />
     <Compile Include="index.php" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="includes\" />
+    <Folder Include="page-templates\" />
     <Folder Include="Properties\" />
+    <Folder Include="utilities\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="composer.json" />
+    <Content Include="page-templates\get-contacts.html" />
+    <Content Include="page-templates\_layout.html" />
+    <Content Include="page-templates\index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\DEVSENSE\PHP Tools\VS$(VisualStudioVersion)\Devsense.PHP.MsWebApplication.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
